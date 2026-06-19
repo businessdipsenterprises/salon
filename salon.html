@@ -1,0 +1,1141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>salon</title>
+  <style>
+
+  </style>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indulge The Salon | Luxury Beauty & Hair Experience in Bhubaneswar</title>
+    <meta name="description" content="Indulge The Salon is Bhubaneswar's trusted beauty destination offering premium hair, skin, bridal, and makeup services at Pal Heights Mall.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* CSS Variables */
+        :root {
+            --primary: #C8A96B;
+            --secondary: #1C1C1C;
+            --bg: #F8F6F2;
+            --accent: #8E5A3C;
+            --text: #2D2D2D;
+            --white: #FFFFFF;
+            --font-heading: 'Playfair Display', serif;
+            --font-body: 'Poppins', sans-serif;
+            --transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-body);
+            color: var(--text);
+            background-color: var(--bg);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-heading);
+            font-weight: 600;
+            color: var(--secondary);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            font-family: var(--font-body);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: var(--transition);
+            border: 2px solid transparent;
+            font-size: 14px;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            color: var(--white);
+            box-shadow: 0 4px 15px rgba(200, 169, 107, 0.4);
+        }
+
+        .btn-primary:hover {
+            box-shadow: 0 6px 20px rgba(200, 169, 107, 0.6);
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            background: transparent;
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+
+        .btn-outline:hover {
+            background: var(--primary);
+            color: var(--white);
+        }
+
+        /* Animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 20px 0;
+            transition: var(--transition);
+        }
+
+        header.scrolled {
+            background: rgba(28, 28, 28, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 15px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        header.scrolled .logo, header.scrolled .nav-link {
+            color: var(--white);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: var(--font-heading);
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--white);
+            letter-spacing: 1px;
+            text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+            transition: var(--transition);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 25px;
+            align-items: center;
+        }
+
+        .nav-link {
+            color: var(--white);
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: var(--transition);
+            text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+        }
+
+        .nav-link:hover {
+            color: var(--primary);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            color: var(--white);
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(28, 28, 28, 0.7), rgba(28, 28, 28, 0.7)), url('https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1920&q=80') center/cover fixed;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--white);
+            padding-top: 80px;
+        }
+
+        .hero-content h1 {
+            color: var(--white);
+            font-size: 5rem;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+            animation: fadeInDown 1s ease-out;
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            font-weight: 300;
+            letter-spacing: 1px;
+            animation: fadeInUp 1s ease-out 0.3s backwards;
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 40px;
+            font-size: 1rem;
+            animation: fadeIn 1s ease-out 0.6s backwards;
+        }
+
+        .hero-stats i {
+            color: var(--primary);
+            margin-right: 8px;
+        }
+
+        /* About Section */
+        .section-padding {
+            padding: 100px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-title h2 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .section-title .divider {
+            height: 3px;
+            width: 60px;
+            background: var(--primary);
+            margin: 0 auto;
+        }
+
+        .about-content {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 50px auto;
+            font-size: 1.1rem;
+            color: var(--text);
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-card {
+            background: var(--white);
+            padding: 30px 20px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            transition: var(--transition);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(200, 169, 107, 0.2);
+        }
+
+        .feature-card i {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+
+        .feature-card h3 {
+            font-size: 1.2rem;
+        }
+
+        /* Services Section */
+        .services {
+            background-color: var(--white);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background: var(--bg);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.03);
+            transition: var(--transition);
+            border: 1px solid rgba(200, 169, 107, 0.1);
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+            border-color: var(--primary);
+        }
+
+        .service-icon-wrap {
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(to bottom, #fff, var(--bg));
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .service-icon-wrap i {
+            font-size: 2rem;
+            color: var(--primary);
+        }
+
+        .service-info {
+            padding: 25px;
+            text-align: center;
+        }
+
+        .service-info h3 {
+            margin-bottom: 10px;
+            font-size: 1.3rem;
+        }
+
+        .service-info p {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        /* Why Choose Us */
+        .why-us {
+            background: var(--secondary);
+            color: var(--white);
+        }
+
+        .why-us .section-title h2 {
+            color: var(--white);
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .why-item {
+            display: flex;
+            align-items: center;
+            background: rgba(255,255,255,0.05);
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid rgba(200, 169, 107, 0.2);
+            transition: var(--transition);
+        }
+
+        .why-item:hover {
+            background: rgba(200, 169, 107, 0.1);
+            transform: scale(1.02);
+        }
+
+        .why-item i {
+            color: var(--primary);
+            font-size: 1.5rem;
+            margin-right: 15px;
+        }
+
+        /* Gallery */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            height: 300px;
+            cursor: pointer;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+
+        .gallery-item::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(28, 28, 28, 0.4);
+            opacity: 0;
+            transition: var(--transition);
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-item:hover::after {
+            opacity: 1;
+        }
+
+        /* Counters */
+        .counters {
+            background: linear-gradient(rgba(28, 28, 28, 0.8), rgba(28, 28, 28, 0.8)), url('https://images.unsplash.com/photo-1521590832167-7bfcbaa6362d?auto=format&fit=crop&w=1920&q=80') center/cover fixed;
+            color: var(--white);
+            padding: 80px 0;
+        }
+
+        .counter-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            text-align: center;
+        }
+
+        .counter-item h3 {
+            color: var(--primary);
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .counter-item p {
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Testimonials */
+        .testimonials {
+            background-color: var(--white);
+        }
+
+        .testimonial-slider {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            gap: 30px;
+            padding-bottom: 20px;
+        }
+
+        .testimonial-slider::-webkit-scrollbar {
+            height: 8px;
+        }
+
+        .testimonial-slider::-webkit-scrollbar-thumb {
+            background: var(--primary);
+            border-radius: 4px;
+        }
+
+        .testimonial-card {
+            min-width: 300px;
+            max-width: 400px;
+            background: var(--bg);
+            padding: 30px;
+            border-radius: 12px;
+            scroll-snap-align: start;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .stars {
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .testimonial-author {
+            font-weight: 600;
+            color: var(--secondary);
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, var(--secondary), #2a2a2a);
+            text-align: center;
+            padding: 80px 20px;
+            color: var(--white);
+        }
+
+        .cta-section h2 {
+            color: var(--primary);
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .cta-section p {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+        }
+
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        /* Contact Section */
+        .contact-wrap {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            background: var(--white);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+        }
+
+        .contact-info h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: var(--primary);
+        }
+
+        .info-item {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        .info-item i {
+            color: var(--primary);
+            font-size: 1.2rem;
+            margin-right: 15px;
+            margin-top: 4px;
+        }
+
+        .map-placeholder {
+            background: #eee;
+            border-radius: 8px;
+            height: 100%;
+            min-height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #888;
+            font-size: 1.2rem;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--secondary);
+            color: var(--white);
+            padding: 60px 0 20px 0;
+            border-top: 3px solid var(--primary);
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-logo {
+            font-family: var(--font-heading);
+            font-size: 24px;
+            color: var(--primary);
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .footer-heading {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            color: var(--white);
+        }
+
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            color: #aaa;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: var(--primary);
+            padding-left: 5px;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 50%;
+            color: var(--white);
+            transition: var(--transition);
+        }
+
+        .social-icons a:hover {
+            background: var(--primary);
+            transform: translateY(-3px);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: #aaa;
+            font-size: 0.9rem;
+        }
+
+        /* Floating Buttons */
+        .floating-btn {
+            position: fixed;
+            bottom: 30px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 24px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            z-index: 999;
+            transition: var(--transition);
+        }
+
+        .float-wa {
+            right: 30px;
+            background: #25D366;
+        }
+
+        .float-call {
+            right: 90px;
+            background: var(--primary);
+        }
+
+        .float-top {
+            left: 30px;
+            background: var(--secondary);
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .float-top.visible {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .floating-btn:hover {
+            transform: scale(1.1);
+        }
+
+        /* Keyframes */
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .hero-content h1 { font-size: 4rem; }
+            .contact-wrap { grid-template-columns: 1fr; }
+        }
+
+        @media (max-width: 768px) {
+            .mobile-menu-btn { display: block; }
+            .nav-links {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: var(--secondary);
+                flex-direction: column;
+                padding: 20px 0;
+                clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+                transition: clip-path 0.4s ease-in-out;
+            }
+            .nav-links.active {
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            }
+            .nav-links .btn { display: none; }
+            .hero-content h1 { font-size: 3rem; }
+            .hero-stats { flex-direction: column; gap: 15px; }
+            .cta-buttons { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+
+    <header id="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">Indulge The Salon</a>
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                    <li><a href="#reviews" class="nav-link">Reviews</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li><a href="tel:09853008804" class="btn btn-primary" style="padding: 8px 20px;">Book Now</a></li>
+                </ul>
+            </nav>
+            <i class="fas fa-bars mobile-menu-btn" id="menuBtn"></i>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <h1>INDULGE THE SALON</h1>
+            <p>"Transforming beauty with elegance, style and confidence."</p>
+            <div class="cta-buttons">
+                <a href="tel:09853008804" class="btn btn-primary">Book Appointment</a>
+                <a href="#services" class="btn btn-outline" style="color: var(--white); border-color: var(--white);">Explore Services</a>
+            </div>
+            <div class="hero-stats">
+                <span><i class="fas fa-star"></i> 4.7 Rating (1126 Reviews)</span>
+                <span><i class="fas fa-map-marker-alt"></i> Bhubaneswar, Odisha</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section-padding fade-in">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Indulge The Salon</h2>
+                <div class="divider"></div>
+            </div>
+            <p class="about-content">
+                Indulge The Salon is one of Bhubaneswar's most trusted beauty destinations, offering premium salon services for women and men. Located at Pal Heights Mall, Jayadev Vihar, our experienced professionals focus on personalized beauty, haircare, skincare, styling, and grooming services in a luxurious and relaxing environment.
+            </p>
+            <div class="about-grid">
+                <div class="feature-card">
+                    <i class="fas fa-cut"></i>
+                    <h3>Experienced Stylists</h3>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-pump-soap"></i>
+                    <h3>Premium Products</h3>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-sparkles"></i>
+                    <h3>Hygienic Environment</h3>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-comments"></i>
+                    <h3>Personalized Consultation</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="section-padding services fade-in">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Premium Services</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon-wrap"><i class="fas fa-scissors"></i></div>
+                    <div class="service-info">
+                        <h3>Hair Services & Styling</h3>
+                        <p>Expert haircuts, styling, and grooming tailored to your personality.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon-wrap"><i class="fas fa-spa"></i></div>
+                    <div class="service-info">
+                        <h3>Hair Spa</h3>
+                        <p>Relaxing and rejuvenating spa treatments for healthy scalp and hair.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon-wrap"><i class="fas fa-palette"></i></div>
+                    <div class="service-info">
+                        <h3>Hair Coloring</h3>
+                        <p>Global coloring, highlights, and balayage using premium products.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon-wrap"><i class="fas fa-wind"></i></div>
+                    <div class="service-info">
+                        <h3>Keratin & Smoothening</h3>
+                        <p>Frizz-free, smooth, and shiny hair treatments for long-lasting results.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon-wrap"><i class="fas fa-smile"></i></div>
+                    <div class="service-info">
+                        <h3>Facial & Skin Care</h3>
+                        <p>Customized skin treatments to glow, hydrate, and clear your skin.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon-wrap"><i class="fas fa-ring"></i></div>
+                    <div class="service-info">
+                        <h3>Bridal & Groom Makeup</h3>
+                        <p>HD & Airbrush makeup for your special day by expert artists.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon-wrap"><i class="fas fa-glass-cheers"></i></div>
+                    <div class="service-info">
+                        <h3>Party Makeup</h3>
+                        <p>Flawless makeup looks tailored for events, parties, and occasions.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon-wrap"><i class="fas fa-hand-sparkles"></i></div>
+                    <div class="service-info">
+                        <h3>Manicure & Pedicure</h3>
+                        <p>Luxury hand and foot care, nail art, and spa treatments.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding why-us fade-in">
+        <div class="container">
+            <div class="section-title">
+                <h2>Why Choose Us</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="why-grid">
+                <div class="why-item"><i class="fas fa-check-circle"></i> <span>Expert Stylists</span></div>
+                <div class="why-item"><i class="fas fa-check-circle"></i> <span>Premium Products</span></div>
+                <div class="why-item"><i class="fas fa-check-circle"></i> <span>1126+ Happy Clients</span></div>
+                <div class="why-item"><i class="fas fa-check-circle"></i> <span>Hygienic Environment</span></div>
+                <div class="why-item"><i class="fas fa-check-circle"></i> <span>Personalized Care</span></div>
+                <div class="why-item"><i class="fas fa-check-circle"></i> <span>Luxury Experience</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="section-padding fade-in">
+        <div class="container">
+            <div class="section-title">
+                <h2>Salon Gallery</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?auto=format&fit=crop&w=600&q=80" alt="Hair Styling"></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1595476108010-b4d1f10d5e43?auto=format&fit=crop&w=600&q=80" alt="Facial Treatment"></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=600&q=80" alt="Bridal Makeup"></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1600948836101-f9ffda59d250?auto=format&fit=crop&w=600&q=80" alt="Salon Interior"></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=600&q=80" alt="Makeup Setup"></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1516975080661-4663b65288bf?auto=format&fit=crop&w=600&q=80" alt="Manicure Tools"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="counters fade-in">
+        <div class="container">
+            <div class="counter-grid">
+                <div class="counter-item">
+                    <h3 class="counter" data-target="1126">0</h3>
+                    <p>Happy Clients</p>
+                </div>
+                <div class="counter-item">
+                    <h3 class="counter" data-target="4.7">0</h3>
+                    <p>Average Rating</p>
+                </div>
+                <div class="counter-item">
+                    <h3 class="counter" data-target="10">0</h3>
+                    <p>Years Experience</p>
+                </div>
+                <div class="counter-item">
+                    <h3 class="counter" data-target="100">0</h3>
+                    <p>% Satisfaction</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="section-padding testimonials fade-in">
+        <div class="container">
+            <div class="section-title">
+                <h2>Client Reviews</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="testimonial-slider">
+                <div class="testimonial-card">
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="testimonial-text">"Hair cut by Siphon is just amazing. Highly recommend Indulge for their professional behavior and luxurious setup."</p>
+                    <p class="testimonial-author">- Priya Sharma</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+                    <p class="testimonial-text">"What an amazing experience at Indulge Pal Heights. Absolutely loved the milkshake hair spa. Tried for the first time!"</p>
+                    <p class="testimonial-author">- Namrata Sahu</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="testimonial-text">"Best bridal makeup service in Bhubaneswar. The team made my special day even better. Thank you so much!"</p>
+                    <p class="testimonial-author">- Ananya Mishra</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="testimonial-text">"Thank u so much Jama ji for ur great work. Keratin treatment was done perfectly. Excellent service."</p>
+                    <p class="testimonial-author">- Rahul Sahu</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section fade-in">
+        <div class="container">
+            <h2>Ready For Your Beauty Transformation?</h2>
+            <p>Book your appointment today and experience premium salon services.</p>
+            <div class="cta-buttons">
+                <a href="tel:09853008804" class="btn btn-outline" style="color: var(--white); border-color: var(--white);"><i class="fas fa-phone-alt"></i> Call Now</a>
+                <a href="#contact" class="btn btn-primary"><i class="far fa-calendar-alt"></i> Book Appointment</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section-padding bg fade-in">
+        <div class="container">
+            <div class="section-title">
+                <h2>Visit Us</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="contact-wrap">
+                <div class="contact-info">
+                    <h3>Indulge The Salon</h3>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Address:</strong><br>
+                            Pal Heights Mall, 3rd Floor,<br>
+                            Jayadev Vihar, Bhubaneswar,<br>
+                            Odisha 751013
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <strong>Phone:</strong><br>
+                            098530 08804
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="far fa-clock"></i>
+                        <div>
+                            <strong>Business Hours:</strong><br>
+                            Monday - Sunday<br>
+                            10:00 AM - 9:00 PM
+                        </div>
+                    </div>
+                    <div style="margin-top: 30px;">
+                        <a href="https://maps.google.com/?q=Indulge+The+Salon+Pal+Heights+Mall+Bhubaneswar" target="_blank" class="btn btn-primary"><i class="fas fa-directions"></i> Get Directions</a>
+                    </div>
+                </div>
+                <div class="map-placeholder">
+                    <div style="text-align: center;">
+                        <i class="fas fa-map-marked-alt" style="font-size: 3rem; color: #ccc; margin-bottom: 10px;"></i>
+                        <p>Google Maps Embed Placeholder</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <span class="footer-logo">Indulge The Salon</span>
+                    <p style="color: #aaa; margin-bottom: 20px;">Experience luxury hair, skin, and beauty services in the heart of Bhubaneswar. Your beauty is our passion.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Our Services</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#reviews">Reviews</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services">Hair Care & Spa</a></li>
+                        <li><a href="#services">Bridal Makeup</a></li>
+                        <li><a href="#services">Skin Treatments</a></li>
+                        <li><a href="#services">Keratin & Smoothening</a></li>
+                        <li><a href="#services">Manicure & Pedicure</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Indulge The Salon. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/919853008804" class="floating-btn float-wa" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <a href="tel:09853008804" class="floating-btn float-call"><i class="fas fa-phone-alt"></i></a>
+    <a href="#home" class="floating-btn float-top" id="btnTop"><i class="fas fa-arrow-up"></i></a>
+
+    <script>
+        // Sticky Header & Back to top button
+        const header = document.getElementById('header');
+        const btnTop = document.getElementById('btnTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+                btnTop.classList.add('visible');
+            } else {
+                header.classList.remove('scrolled');
+                btnTop.classList.remove('visible');
+            }
+        });
+
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('menuBtn');
+        const navLinks = document.getElementById('navLinks');
+        
+        menuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Close mobile menu on link click
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+
+        // Intersection Observer for Scroll Animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: "0px 0px -50px 0px"
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    
+                    // Trigger counter animation when section is visible
+                    if(entry.target.classList.contains('counters')) {
+                        startCounters();
+                    }
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(element => {
+            observer.observe(element);
+        });
+
+        // Counter Animation Logic
+        let countersAnimated = false;
+        function startCounters() {
+            if(countersAnimated) return;
+            countersAnimated = true;
+            
+            const counters = document.querySelectorAll('.counter');
+            const speed = 200; 
+
+            counters.forEach(counter => {
+                const updateCount = () => {
+                    const target = +counter.getAttribute('data-target');
+                    const count = +counter.innerText;
+                    
+                    const inc = target / speed;
+
+                    if (count < target) {
+                        // For decimal values like 4.7
+                        if(target % 1 !== 0) {
+                            counter.innerText = (count + 0.1).toFixed(1);
+                        } else {
+                            counter.innerText = Math.ceil(count + inc);
+                        }
+                        setTimeout(updateCount, 20);
+                    } else {
+                        counter.innerText = target + (target > 5 ? '+' : '');
+                    }
+                };
+                updateCount();
+            });
+        }
+    </script>
+</body>
+</html>
+
+  <script>
+
+  </script>
+</body>
+</html>
